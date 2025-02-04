@@ -3,232 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INMOTEC SAC - Fabricación e Implementación de Tableros Eléctricos</title>
+    <title>¿Cariño, seriás mi San Valentín?</title>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <style>
-        .navbar-brand img {
-            height: 50px;
-        }
-        .hero-section {
-            background: url('https://images.pexels.com/photos/3825586/pexels-photo-3825586.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center/cover;
-            color: white;
-            padding: 150px 0;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-        .section-title {
-            margin-bottom: 50px;
-            font-size: 2.5rem;
-            font-weight: bold;
-        }
-        .service-card {
-            margin-bottom: 30px;
-            transition: transform 0.3s ease;
-        }
-        .service-card:hover {
-            transform: translateY(-10px);
-        }
-        .footer {
-            background-color: #343a40;
-            color: white;
-            padding: 20px 0;
-        }
-        .banner {
-            background-color: #007bff;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-        .scroll-btn {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 1000;
-        }
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="d-flex justify-content-center align-items-center vh-100 bg-light">
+    <div class="container text-center bg-white p-5 rounded shadow">
+        <h1 class="text-danger fw-bold">¡Estefany Vera, eres muy especial para mí!</h1>
+        <p class="lead mt-3">¿Quieres ser mi San Valentín?</p>
+        <img src="img.jpg?text=Imagen+de+Amor" alt="Imagen de amor" class="img-fluid rounded mb-4">
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="https://via.placeholder.com/150x50" alt="INMOTEC SAC">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#servicios">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#nosotros">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#proyectos">Proyectos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contacto">Contacto</a>
-                    </li>
-                </ul>
-            </div>
+<!-- Reproductor de audio MP3 -->
+        <div class="mb-4">
+            <audio controls autoplay loop>
+                <source src="jisa-letra.mp3" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
         </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section id="inicio" class="hero-section text-center">
-        <div class="container">
-            <h1 class="display-4">Fabricación e Implementación de Tableros Eléctricos</h1>
-            <p class="lead">Soluciones eléctricas a medida para tu negocio.</p>
-            <a href="#contacto" class="btn btn-primary btn-lg">Contáctanos</a>
-        </div>
-    </section>
 
-    <!-- Banner Section -->
-    <div class="banner">
-        <div class="container">
-            <h3>¡Especialistas en tableros eléctricos a medida!</h3>
-            <p>Contamos con más de 10 años de experiencia en el sector.</p>
+        <div class="buttons mt-4">
+            <button id="yes-btn" class="btn btn-success btn-lg me-3">¡Sí!</button>
+            <button id="no-btn" class="btn btn-danger btn-lg">No</button>
         </div>
     </div>
 
-    <!-- Servicios Section -->
-    <section id="servicios" class="py-5">
-        <div class="container">
-            <h2 class="section-title text-center">Nuestros Servicios</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card service-card">
-                        <img src="https://images.pexels.com/photos/3825582/pexels-photo-3825582.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="Fabricación de Tableros Eléctricos">
-                        <div class="card-body">
-                            <h5 class="card-title">Fabricación de Tableros Eléctricos</h5>
-                            <p class="card-text">Diseño y fabricación de tableros eléctricos personalizados según tus necesidades.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card service-card">
-                        <img src="https://images.pexels.com/photos/3825583/pexels-photo-3825583.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="Implementación de Sistemas Eléctricos">
-                        <div class="card-body">
-                            <h5 class="card-title">Implementación de Sistemas Eléctricos</h5>
-                            <p class="card-text">Instalación y puesta en marcha de sistemas eléctricos industriales y comerciales.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card service-card">
-                        <img src="https://images.pexels.com/photos/3825584/pexels-photo-3825584.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="Mantenimiento y Reparación">
-                        <div class="card-body">
-                            <h5 class="card-title">Mantenimiento y Reparación</h5>
-                            <p class="card-text">Servicios de mantenimiento preventivo y correctivo para tus sistemas eléctricos.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Nosotros Section -->
-    <section id="nosotros" class="bg-light py-5">
-        <div class="container">
-            <h2 class="section-title text-center">Sobre Nosotros</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <p>INMOTEC SAC es una empresa especializada en la fabricación e implementación de tableros eléctricos a medida. Con más de 10 años de experiencia en el sector, ofrecemos soluciones eléctricas de alta calidad para industrias y comercios.</p>
-                    <a href="#contacto" class="btn btn-primary">Saber más</a>
-                </div>
-                <div class="col-md-6">
-                    <img src="https://images.pexels.com/photos/3825585/pexels-photo-3825585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Sobre Nosotros" class="img-fluid rounded">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Proyectos Section -->
-    <section id="proyectos" class="py-5">
-        <div class="container">
-            <h2 class="section-title text-center">Proyectos Recientes</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://images.pexels.com/photos/3825587/pexels-photo-3825587.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="Proyecto 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Proyecto 1</h5>
-                            <p class="card-text">Descripción breve del proyecto 1.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://images.pexels.com/photos/3825588/pexels-photo-3825588.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="Proyecto 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Proyecto 2</h5>
-                            <p class="card-text">Descripción breve del proyecto 2.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://images.pexels.com/photos/3825589/pexels-photo-3825589.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="Proyecto 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Proyecto 3</h5>
-                            <p class="card-text">Descripción breve del proyecto 3.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contacto Section -->
-    <section id="contacto" class="bg-dark text-white py-5">
-        <div class="container">
-            <h2 class="section-title text-center">Contacto</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <form>
-                        <div class="mb-3">
-                            <label for="nombre" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" id="nombre" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="mensaje" class="form-label">Mensaje</label>
-                            <textarea class="form-control" id="mensaje" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Enviar</button>
-                    </form>
-                </div>
-                <div class="col-md-6">
-                    <h5>Información de Contacto</h5>
-                    <p><strong>Dirección:</strong> Av. Ejemplo 123, Lima, Perú</p>
-                    <p><strong>Teléfono:</strong> +51 123 456 789</p>
-                    <p><strong>Email:</strong> info@inmotecsac.com</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer text-center">
-        <div class="container">
-            <p>&copy; 2023 INMOTEC SAC. Todos los derechos reservados.</p>
-        </div>
-    </footer>
-
-    <!-- Botón de desplazamiento hacia arriba -->
-    <a href="#inicio" class="btn btn-primary scroll-btn">↑</a>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS y dependencias -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
