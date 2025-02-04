@@ -1,0 +1,22 @@
+/* Estilos adicionales para personalizar */
+body {
+    background-color: #ffebee !important; /* Fondo rosado */
+}
+
+.container {
+    max-width: 600px;
+}
+
+h1 {
+    color: #e91e63 !important; /* Color rosa */
+}
+
+.love-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#no-btn {
+    transition: all 0.3s ease; /* Transición suave */
+}
